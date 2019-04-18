@@ -14,7 +14,6 @@ public class Shoot : MonoBehaviour
     {
         CharInput.Shoot += Fire;
     }   
-
     void Fire()
     {
         Rigidbody2D spawned = Instantiate(projectile, transform.position, transform.rotation);
