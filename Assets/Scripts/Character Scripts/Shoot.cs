@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class Shoot : MonoBehaviour
 {
-    [SerializeField] private GameObject projectile;    
+    [SerializeField] private Rigidbody2D projectile;
 
+    [SerializeField] private Transform direction;
+
+    [SerializeField] private float projectileSpeed = 300f;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +17,9 @@ public class Shoot : MonoBehaviour
 
     void Fire()
     {
-        Instantiate(projectile, transform.position, transform.rotation);        
+        Rigidbody2D spawned = Instantiate(projectile, transform.position, transform.rotation);
+        Vector2 directionFaced = direction.position - transform.position;
+        spawned.AddForce(directionFaced * projectileSpeed);
     }
 }
+

@@ -4,10 +4,16 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class ProjectileBehaviour : MonoBehaviour
 {
-    [SerializeField]private float launchSpeed = 300f;    
+    [SerializeField]private float launchSpeed = 3000f;
 
-    private void FixedUpdate()
+    private Rigidbody2D rb;
+
+    private void Start()
     {
-        GetComponent<Rigidbody2D>().AddForce(transform.forward * launchSpeed);
-    }
+        rb = GetComponent<Rigidbody2D>();
+
+        Vector2 direction = transform.position;
+        direction.y += 1f;
+        rb.AddForce(direction * launchSpeed);
+    }    
 }
