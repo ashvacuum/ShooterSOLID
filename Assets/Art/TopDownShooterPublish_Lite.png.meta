@@ -1,0 +1,467 @@
+fileFormatVersion: 2
+guid: ada6e42bb36cd8942a72173266813a28
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: TopDownShooterPublish_Lite_0
+    21300002: Marine 1
+    21300004: Marine 2
+    21300006: TopDownShooterPublish_Lite_3
+    21300008: TopDownShooterPublish_Lite_4
+    21300010: TopDownShooterPublish_Lite_5
+    21300012: TopDownShooterPublish_Lite_6
+    21300014: TopDownShooterPublish_Lite_7
+    21300016: Enforcer
+    21300018: medic
+    21300020: Buggy
+    21300022: TopDownShooterPublish_Lite_11
+    21300024: TopDownShooterPublish_Lite_12
+    21300026: TopDownShooterPublish_Lite_13
+    21300028: TopDownShooterPublish_Lite_14
+    21300030: TopDownShooterPublish_Lite_15
+    21300032: Marine 3
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TopDownShooterPublish_Lite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1309
+        width: 1368
+        height: 1129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59be7cc4d0b91434580d8ca787dd2ae1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marine 1
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 2153
+        width: 136
+        height: 183
+      alignment: 9
+      pivot: {x: 0.5217186, y: 0.34665567}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07baff5f5a9b4ec4aa80ba151f712d6c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marine 2
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 2137
+        width: 157
+        height: 218
+      alignment: 9
+      pivot: {x: 0.47177765, y: 0.3374001}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4aa5ef14edb7464db073501d5051e8d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TopDownShooterPublish_Lite_3
+      rect:
+        serializedVersion: 2
+        x: 2140
+        y: 2081
+        width: 176
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5964106, y: 0.33650112}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7989a87e7b48c148a8c5f3605f9b38b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TopDownShooterPublish_Lite_4
+      rect:
+        serializedVersion: 2
+        x: 2399
+        y: 2060
+        width: 180
+        height: 253
+      alignment: 9
+      pivot: {x: 0.5565606, y: 0.3077349}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feb9dbf7fa7717a4395b2fc012853030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TopDownShooterPublish_Lite_5
+      rect:
+        serializedVersion: 2
+        x: 2599
+        y: 2047
+        width: 156
+        height: 252
+      alignment: 9
+      pivot: {x: 0.5145029, y: 0.31594995}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3a698ce58bd68a4d94f68139753a131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TopDownShooterPublish_Lite_6
+      rect:
+        serializedVersion: 2
+        x: 2779
+        y: 2041
+        width: 136
+        height: 253
+      alignment: 9
+      pivot: {x: 0.45840994, y: 0.2585507}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d06d7776b64a24641a9e8699cb7511ad
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TopDownShooterPublish_Lite_7
+      rect:
+        serializedVersion: 2
+        x: 2956
+        y: 2057
+        width: 88
+        height: 117
+      alignment: 9
+      pivot: {x: 0.53856313, y: 0.29695848}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5328eb0e079ce7145918892a4003e254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enforcer
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 1935
+        width: 171
+        height: 197
+      alignment: 9
+      pivot: {x: 0.5690961, y: 0.38004455}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a33a2e06bd105c842a1256b1a4c9c558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medic
+      rect:
+        serializedVersion: 2
+        x: 1887
+        y: 1897
+        width: 155
+        height: 248
+      alignment: 9
+      pivot: {x: 0.45235634, y: 0.36898065}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64f19b0dbc1416e4dad96268adedac4a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buggy
+      rect:
+        serializedVersion: 2
+        x: 2099
+        y: 1303
+        width: 387
+        height: 623
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0f36a9cbc6b53443bd0ffff804298f8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TopDownShooterPublish_Lite_11
+      rect:
+        serializedVersion: 2
+        x: 1628
+        y: 1532
+        width: 125
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84fd4636ff189e346abb58a6382836ac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TopDownShooterPublish_Lite_12
+      rect:
+        serializedVersion: 2
+        x: 1412
+        y: 1271
+        width: 573
+        height: 235
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eda1ec444de1bc4fbe8742d6d08de37
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TopDownShooterPublish_Lite_13
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 368
+        width: 838
+        height: 841
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6d6b44c115bdaf42804abb41d33a273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TopDownShooterPublish_Lite_14
+      rect:
+        serializedVersion: 2
+        x: 1274
+        y: 368
+        width: 840
+        height: 841
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a48bd98b2395c834797be0c545568b71
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TopDownShooterPublish_Lite_15
+      rect:
+        serializedVersion: 2
+        x: 2207
+        y: 368
+        width: 841
+        height: 841
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f14ddf9923edc2d459ba54729d36babf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marine 3
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 1913
+        width: 174
+        height: 223
+      alignment: 9
+      pivot: {x: 0.55941665, y: 0.45363793}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5eb805625b48dd45b223828e74e221c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 4674381cea24a9e49a47151e127c8b49
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
