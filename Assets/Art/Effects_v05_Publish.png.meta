@@ -36,6 +36,25 @@ TextureImporter:
     21300062: Effects_v05_Publish_31
     21300064: Effects_v05_Publish_32
     21300066: Effects_v05_Publish_33
+    21300068: Effects_v05_Publish_34
+    21300070: Effects_v05_Publish_35
+    21300072: Effects_v05_Publish_36
+    21300074: Effects_v05_Publish_37
+    21300076: Effects_v05_Publish_38
+    21300078: Effects_v05_Publish_39
+    21300080: Effects_v05_Publish_40
+    21300082: Effects_v05_Publish_41
+    21300084: Effects_v05_Publish_42
+    21300086: Effects_v05_Publish_43
+    21300088: Effects_v05_Publish_44
+    21300090: Effects_v05_Publish_45
+    21300092: Effects_v05_Publish_46
+    21300094: Effects_v05_Publish_47
+    21300096: Effects_v05_Publish_48
+    21300098: Effects_v05_Publish_49
+    21300100: Effects_v05_Publish_50
+    21300102: Effects_v05_Publish_51
+    21300104: Effects_v05_Publish_52
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -81,7 +100,7 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -132,12 +151,12 @@ TextureImporter:
       name: Effects_v05_Publish_0
       rect:
         serializedVersion: 2
-        x: 72
-        y: 1372
-        width: 796
-        height: 175
+        x: 147
+        y: 1382
+        width: 180
+        height: 165
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -157,7 +176,7 @@ TextureImporter:
         width: 88
         height: 77
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -177,7 +196,7 @@ TextureImporter:
         width: 91
         height: 82
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -197,33 +216,13 @@ TextureImporter:
         width: 89
         height: 77
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: ed945194e80f09347aa23a299ea667c0
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effects_v05_Publish_4
-      rect:
-        serializedVersion: 2
-        x: 1126
-        y: 926
-        width: 1552
-        height: 762
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f60ed76c7c0d655489213b3bd0b257f6
       vertices: []
       indices: 
       edges: []
@@ -236,8 +235,8 @@ TextureImporter:
         y: 1278
         width: 85
         height: 371
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.47944048, y: 0.9357127}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -257,7 +256,7 @@ TextureImporter:
         width: 15
         height: 67
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -277,7 +276,7 @@ TextureImporter:
         width: 15
         height: 67
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -289,35 +288,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Effects_v05_Publish_8
-      rect:
-        serializedVersion: 2
-        x: 880
-        y: 1114
-        width: 333
-        height: 328
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fc0f354bbe5cf0c4f995751d79a19557
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Effects_v05_Publish_9
       rect:
         serializedVersion: 2
         x: 3098
         y: 1176
-        width: 108
-        height: 248
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 104
+        height: 167
+      alignment: 9
+      pivot: {x: 0.51039475, y: 0.299293}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -337,7 +316,7 @@ TextureImporter:
         width: 15
         height: 67
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -356,8 +335,8 @@ TextureImporter:
         y: 1217
         width: 86
         height: 225
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.56286055, y: 0.80274254}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -374,10 +353,10 @@ TextureImporter:
         serializedVersion: 2
         x: 169
         y: 1142
-        width: 113
-        height: 225
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 109
+        height: 129
+      alignment: 9
+      pivot: {x: 0.5, y: 0.43197277}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -394,10 +373,10 @@ TextureImporter:
         serializedVersion: 2
         x: 419
         y: 1142
-        width: 109
-        height: 225
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 106
+        height: 121
+      alignment: 9
+      pivot: {x: 0.5236537, y: 0.4481968}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -414,10 +393,10 @@ TextureImporter:
         serializedVersion: 2
         x: 661
         y: 1136
-        width: 111
-        height: 228
+        width: 110
+        height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -437,7 +416,7 @@ TextureImporter:
         width: 7
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -457,7 +436,7 @@ TextureImporter:
         width: 15
         height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -477,7 +456,7 @@ TextureImporter:
         width: 4
         height: 5
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -497,33 +476,13 @@ TextureImporter:
         width: 12
         height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 84c358a697c7af44bb08d6b143e17c15
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effects_v05_Publish_19
-      rect:
-        serializedVersion: 2
-        x: 2622
-        y: 699
-        width: 394
-        height: 588
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ad552cc8e9d7ddc46b516f66b224faee
       vertices: []
       indices: 
       edges: []
@@ -536,8 +495,8 @@ TextureImporter:
         y: 863
         width: 179
         height: 323
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5120802, y: 0.12173831}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -556,8 +515,8 @@ TextureImporter:
         y: 260
         width: 106
         height: 571
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.52040017, y: 0.8389478}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -576,8 +535,8 @@ TextureImporter:
         y: 260
         width: 106
         height: 571
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.55100065, y: 0.85598993}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -596,8 +555,8 @@ TextureImporter:
         y: 260
         width: 106
         height: 571
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5408003, y: 0.8522028}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -617,7 +576,7 @@ TextureImporter:
         width: 286
         height: 278
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -637,7 +596,7 @@ TextureImporter:
         width: 161
         height: 119
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -657,7 +616,7 @@ TextureImporter:
         width: 162
         height: 119
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -677,7 +636,7 @@ TextureImporter:
         width: 162
         height: 118
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -697,7 +656,7 @@ TextureImporter:
         width: 173
         height: 183
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -717,7 +676,7 @@ TextureImporter:
         width: 172
         height: 183
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -736,8 +695,8 @@ TextureImporter:
         y: 241
         width: 111
         height: 408
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.50974035, y: 0.9266597}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -756,8 +715,8 @@ TextureImporter:
         y: 241
         width: 111
         height: 408
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5389624, y: 0.9293098}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -776,8 +735,8 @@ TextureImporter:
         y: 241
         width: 111
         height: 408
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.54870385, y: 0.92400956}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -794,16 +753,456 @@ TextureImporter:
         serializedVersion: 2
         x: 2916
         y: 263
-        width: 440
-        height: 385
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 209
+        height: 392
+      alignment: 9
+      pivot: {x: 0.52069235, y: 0.24900118}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 8657628dc1be1d244ba8e3ce76294cae
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_v05_Publish_4
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 1286
+        width: 92
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d33df41e108144040a6725249cd51d68
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_v05_Publish_8
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 1293
+        width: 80
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22dfbaae40dd65a44957544134a49acc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_v05_Publish_19
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 1286
+        width: 75
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a9b2fb4541fded4a8e6d297b8cad9e2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_v05_Publish_34
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 1122
+        width: 83
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d223e47505b56a42bd5f36d2756bc46
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_v05_Publish_35
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 1125
+        width: 90
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 169d4b19fb9cfd347aff348af8952945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_v05_Publish_36
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 1132
+        width: 86
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06b9787d93709ba47bfbed7fc956984e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_v05_Publish_37
+      rect:
+        serializedVersion: 2
+        x: 1304
+        y: 1217
+        width: 140
+        height: 290
+      alignment: 9
+      pivot: {x: 0.51477486, y: 0.8281162}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb79582c4596acb4d8b16d4b041454c7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_v05_Publish_38
+      rect:
+        serializedVersion: 2
+        x: 1502
+        y: 1244
+        width: 158
+        height: 270
+      alignment: 9
+      pivot: {x: 0.48690835, y: 0.8141145}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe3d17ced00313045b293c7b4edbe1d6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_v05_Publish_39
+      rect:
+        serializedVersion: 2
+        x: 1515
+        y: 942
+        width: 166
+        height: 260
+      alignment: 9
+      pivot: {x: 0.49999925, y: 0.188108}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 098d3eea14570b04e8885ec382758b7d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_v05_Publish_40
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 1575
+        width: 337
+        height: 133
+      alignment: 9
+      pivot: {x: 0.52887523, y: 0.43496314}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63ade9f2f22fb40469a28e62da47efd5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_v05_Publish_41
+      rect:
+        serializedVersion: 2
+        x: 1634
+        y: 1549
+        width: 378
+        height: 156
+      alignment: 9
+      pivot: {x: 0.5400455, y: 0.5623779}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92bcf82b4d1c08249ba9d7e56eac95d6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_v05_Publish_42
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 1538
+        width: 345
+        height: 172
+      alignment: 9
+      pivot: {x: 0.5250715, y: 0.55657536}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 751ed9dce501e404c9450e9501fc4c26
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_v05_Publish_43
+      rect:
+        serializedVersion: 2
+        x: 2252
+        y: 1204
+        width: 176
+        height: 305
+      alignment: 9
+      pivot: {x: 0.5184298, y: 0.8899498}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc870b57fd18a9e40acd4e3ed78b248a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_v05_Publish_44
+      rect:
+        serializedVersion: 2
+        x: 2450
+        y: 1219
+        width: 184
+        height: 295
+      alignment: 9
+      pivot: {x: 0.51175195, y: 0.8188696}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e82872bc67faa494f978a115e3166b0a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_v05_Publish_45
+      rect:
+        serializedVersion: 2
+        x: 2480
+        y: 936
+        width: 164
+        height: 238
+      alignment: 9
+      pivot: {x: 0.5131851, y: 0.23196436}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b71ee30d89c3e1e44aadd547b79e4af4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_v05_Publish_46
+      rect:
+        serializedVersion: 2
+        x: 1943
+        y: 1225
+        width: 190
+        height: 275
+      alignment: 9
+      pivot: {x: 0.5284533, y: 0.8499232}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 722754b632fdefe438a467b9b697bf78
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_v05_Publish_47
+      rect:
+        serializedVersion: 2
+        x: 1766
+        y: 1197
+        width: 137
+        height: 314
+      alignment: 9
+      pivot: {x: 0.5236754, y: 0.8374521}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bfee6a7cb30dff46bf3775a1670ee45
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_v05_Publish_48
+      rect:
+        serializedVersion: 2
+        x: 1977
+        y: 904
+        width: 175
+        height: 286
+      alignment: 9
+      pivot: {x: 0.475286, y: 0.28829125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f3c2c39fbddc104f8080880f0048e02
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_v05_Publish_49
+      rect:
+        serializedVersion: 2
+        x: 3182
+        y: 301
+        width: 130
+        height: 330
+      alignment: 9
+      pivot: {x: 0.49168232, y: 0.19201456}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cfdf914627f6c94bac00a01c7fe43bd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_v05_Publish_50
+      rect:
+        serializedVersion: 2
+        x: 2632
+        y: 715
+        width: 254
+        height: 183
+      alignment: 9
+      pivot: {x: 0.5170264, y: 0.40546656}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5326235a9fc6a6740af399fd683e4835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_v05_Publish_51
+      rect:
+        serializedVersion: 2
+        x: 2678
+        y: 1060
+        width: 180
+        height: 196
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bf9af17c8570924295802d1da81bc26
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_v05_Publish_52
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 953
+        width: 108
+        height: 282
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db3f87bc7374f174c9b6e0736800a70d
       vertices: []
       indices: 
       edges: []
