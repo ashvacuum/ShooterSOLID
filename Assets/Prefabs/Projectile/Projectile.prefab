@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 7165163896518018113}
   - component: {fileID: 2958478894262168300}
   - component: {fileID: 3619480695720684430}
+  - component: {fileID: 6774528901366128410}
+  - component: {fileID: 6270168252548076527}
   m_Layer: 0
   m_Name: Projectile
   m_TagString: Untagged
@@ -101,3 +103,36 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!114 &6774528901366128410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6670823440408789975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 556ceabab03095a4dba0edb2cf62211d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  startParticle: {fileID: 8053599563265617366, guid: e20a6709d70314c44b9e7ddf5b6684dc,
+    type: 3}
+  deathParticle: {fileID: 8053599563265617366, guid: dbae85b2ef918294fa09793f7d403684,
+    type: 3}
+--- !u!58 &6270168252548076527
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6670823440408789975}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.017475843, y: 0.0219903}
+  serializedVersion: 2
+  m_Radius: 0.21651554

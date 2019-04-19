@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 7165163896518018113}
   - component: {fileID: 2958478894262168300}
   - component: {fileID: 3619480695720684430}
+  - component: {fileID: 4782705760390701460}
+  - component: {fileID: 8530926627445084779}
   m_Layer: 0
   m_Name: Smoke
   m_TagString: Untagged
@@ -101,3 +103,36 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!114 &4782705760390701460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6670823440408789975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 556ceabab03095a4dba0edb2cf62211d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectileSpeed: 300
+  damage: 2
+  startParticle: {fileID: 0}
+  deathParticle: {fileID: 0}
+  deathTime: 0.2
+--- !u!70 &8530926627445084779
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6670823440408789975}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.043248236, y: -0.57875156}
+  m_Size: {x: 1.11, y: 1.7343354}
+  m_Direction: 0

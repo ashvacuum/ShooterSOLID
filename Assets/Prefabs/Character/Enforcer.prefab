@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 771775252544034766}
   - component: {fileID: 771775252544034767}
   m_Layer: 0
-  m_Name: FirstCharacter
+  m_Name: Enforcer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -218,10 +218,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ffe5c446c0440f4290c1c398498c121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 3619480695720684430, guid: 6a84c10392b2ec348b7b39cbe7c5050b,
+  projectile: {fileID: 3619480695720684430, guid: a3afd4b180818504eb47c969c27db034,
     type: 3}
+  projectileSpeed: 250
   direction: {fileID: 771775252674237620}
-  projectileSpeed: 450
 --- !u!1 &771775252674237623
 GameObject:
   m_ObjectHideFlags: 0

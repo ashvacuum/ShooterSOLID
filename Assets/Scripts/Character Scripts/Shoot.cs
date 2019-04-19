@@ -5,10 +5,9 @@ using UnityEngine;
 public class Shoot : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D projectile;
-
+    [SerializeField] protected float projectileSpeed;
     [SerializeField] private Transform direction;
-
-    [SerializeField] private float projectileSpeed = 300f;
+    [SerializeField] protected GameObject startParticle;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,9 +15,11 @@ public class Shoot : MonoBehaviour
     }   
     void Fire()
     {
-        Rigidbody2D spawned = Instantiate(projectile, transform.position, transform.rotation);
-        Vector2 directionFaced = direction.position - transform.position;
-        spawned.AddForce(directionFaced * projectileSpeed);
+        GameObject g = Instantiate(startParticle, transform.position, transform.rotation);
+        Destroy(g, 1f);
+        Vector2 face = direction.position - transform.position;
+        Rigidbody2D rb = Instantiate(projectile, transform.position, transform.rotation);
+        rb.AddForce(face * projectileSpeed);
     }
 }
 

@@ -218,10 +218,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ffe5c446c0440f4290c1c398498c121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 3619480695720684430, guid: 6a84c10392b2ec348b7b39cbe7c5050b,
+  projectile: {fileID: 3619480695720684430, guid: cb1765d1826f3164990f0bae7a947832,
     type: 3}
+  projectileSpeed: 300
   direction: {fileID: 771775252674237620}
-  projectileSpeed: 200
 --- !u!1 &771775252674237623
 GameObject:
   m_ObjectHideFlags: 0
