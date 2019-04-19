@@ -22,7 +22,7 @@ public class ThreadQueuer : MonoBehaviour
         {
             Action someFunc = functionsToRunInMainThread[0];
             functionsToRunInMainThread.RemoveAt(0);
-            someFunc();
+            someFunc();            
         }
     }
 

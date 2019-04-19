@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 771775252544034757}
   - component: {fileID: 771775252544034764}
   - component: {fileID: 771775252544034766}
+  - component: {fileID: 6102219773323702245}
   m_Layer: 0
   m_Name: Marine
   m_TagString: Untagged
@@ -74,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300004, guid: ada6e42bb36cd8942a72173266813a28, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -161,6 +162,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e270678ca441ef4d8763833706e77e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6102219773323702245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 771775252544034756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94b0131c19a91f94392f6049dfadc626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 10
 --- !u!1 &771775252646178428
 GameObject:
   m_ObjectHideFlags: 0
