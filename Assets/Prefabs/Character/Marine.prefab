@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 771775252544034757}
   - component: {fileID: 771775252544034764}
   - component: {fileID: 771775252544034766}
-  - component: {fileID: 771775252544034767}
   m_Layer: 0
   m_Name: Marine
   m_TagString: Untagged
@@ -121,9 +120,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.11815393, y: -0.12798476}
+  m_Offset: {x: -0.03556907, y: -0.013938904}
   serializedVersion: 2
-  m_Radius: 0.6207017
+  m_Radius: 0.5892407
 --- !u!114 &771775252544034757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,7 +135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab65906658cc1574baf0a4b092f8935f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
+  moveSpeed: 3
 --- !u!114 &771775252544034764
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,19 +161,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e270678ca441ef4d8763833706e77e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &771775252544034767
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 771775252544034756}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 760421f26c80c27439b3ba3170328651, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotationSpeed: 1
 --- !u!1 &771775252646178428
 GameObject:
   m_ObjectHideFlags: 0
@@ -220,7 +206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 3619480695720684430, guid: 6a84c10392b2ec348b7b39cbe7c5050b,
     type: 3}
-  projectileSpeed: 300
+  projectileSpeed: 600
   direction: {fileID: 771775252674237620}
 --- !u!1 &771775252674237623
 GameObject:

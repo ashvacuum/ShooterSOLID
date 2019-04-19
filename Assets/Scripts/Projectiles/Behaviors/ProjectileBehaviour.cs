@@ -5,15 +5,12 @@ using UnityEngine;
 public class ProjectileBehaviour : MonoBehaviour
 {    
     [SerializeField] protected int damage;
-    [SerializeField] protected GameObject startParticle;
+    
     [SerializeField] protected GameObject deathParticle;
         
 
     private void Start()
     {
-        //spawn particle fire
-        GameObject g = Instantiate(startParticle, transform.position, transform.rotation);
-        Destroy(g, 1f);
 
     }
 
@@ -23,15 +20,8 @@ public class ProjectileBehaviour : MonoBehaviour
         {
             collision.gameObject.GetComponent<IDamage>().ModifyHealth(-damage);
         }
-
         GameObject g = Instantiate(deathParticle, transform.position, transform.rotation);
         Destroy(g, 1f);
         Destroy(gameObject);
     }
-
-    private void OnDestroy()
-    {
-        Debug.Log("Spawned a death particle");
-    }
-
 }

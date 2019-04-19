@@ -19,7 +19,8 @@ public class CharInput : MonoBehaviour
     {
         MoveUp = Input.GetAxisRaw("Vertical");
         MoveSide = Input.GetAxisRaw("Horizontal");
-        if (Input.GetMouseButtonDown(0))
+        FireWeapons = Input.GetButtonDown("Fire1");
+        if (FireWeapons)
             Shoot();
             
     }
