@@ -347,7 +347,7 @@ GameObject:
   - component: {fileID: 712514139}
   - component: {fileID: 712514141}
   - component: {fileID: 712514140}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: New Sprite (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -453,7 +453,7 @@ GameObject:
   - component: {fileID: 772194005}
   - component: {fileID: 772194007}
   - component: {fileID: 772194006}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: New Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -699,7 +699,7 @@ GameObject:
   - component: {fileID: 1143352590}
   - component: {fileID: 1143352592}
   - component: {fileID: 1143352591}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: New Sprite (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1293,7 +1293,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2553c9e316b8d94c9b0f13ca3d81137, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  character: {fileID: 2129711040}
   unwalkable:
     serializedVersion: 2
     m_Bits: 256
@@ -1395,7 +1394,7 @@ GameObject:
   - component: {fileID: 1935416609}
   - component: {fileID: 1935416611}
   - component: {fileID: 1935416610}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: New Sprite (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1584,12 +1583,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   levelGen: {fileID: 21687673}
---- !u!4 &2129711040 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 771775252544034761, guid: 4c1e743dade7ea34a9254123590fd85a,
-    type: 3}
-  m_PrefabInstance: {fileID: 1917342743}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2133964721
 GameObject:
   m_ObjectHideFlags: 0

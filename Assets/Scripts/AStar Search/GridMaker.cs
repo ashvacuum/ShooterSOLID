@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class GridMaker : MonoBehaviour
 {
-    public Transform character;
+    
     public LayerMask unwalkable;
     public Vector2 gridWorldSize;
     public float nodeRadius;
@@ -34,19 +34,10 @@ public class GridMaker : MonoBehaviour
         {
             CreateGrid();
         }
-        while (functionsToRunInMainThread.Count > 0)
-        {
-            Action someFunc = functionsToRunInMainThread[0];
-            functionsToRunInMainThread.RemoveAt(0);
-            someFunc();
-        }
+      
     }
 
-    public void StartThreadedFunction(Action someFunction)
-    {
-        Thread t = new Thread(new ThreadStart(someFunction));
-        t.Start();
-    }
+    
 
     void CreateGrid()
     {
@@ -90,17 +81,13 @@ public class GridMaker : MonoBehaviour
     {
         Gizmos.DrawWireCube(transform.position, gridWorldSize);
         if(grid != null && gridCreated)
-        {
-            Node characterNode = NodeFromWorldPoint(character.position);
+        {            
             foreach( Node n in grid)
             {
                 if (n != null)
                 {
                     Gizmos.color = (n.walkable) ? Color.white : Color.red;
-                    if (characterNode == n)
-                    {
-                        Gizmos.color = Color.cyan;
-                    }
+                    
                     Gizmos.DrawCube(n.worldPosition, Vector2.one * (nodeDiameter * 0.9f));
                 } 
             }
