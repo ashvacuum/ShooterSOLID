@@ -34,6 +34,7 @@ public class LevelGeneration : MonoBehaviour
         Instantiate(rooms[0], transform.position, Quaternion.identity);
         canGenerate = true;
         direction = Random.Range(1, 6);
+        
     }
 
     private void Update()
@@ -98,13 +99,12 @@ public class LevelGeneration : MonoBehaviour
             if (transform.position.y > minY)
             {
                 Collider2D roomDetection = Physics2D.OverlapCircle(transform.position, 1, room);
-                if(roomDetection.GetComponent<RoomTypes>().type != 1 && roomDetection.GetComponent<RoomTypes>().type != 3)
+                if(roomDetection.GetComponent<RoomTypes>().type != 1 && roomDetection.GetComponent<RoomTypes>().type != 3 && roomDetection != null)
                 {
                     if (downCounter >= 2)
                     {
                         roomDetection.GetComponent<RoomTypes>().RoomDestroy();
                         Instantiate(rooms[3], transform.position, Quaternion.identity);
-
                     }
                     else
                     {

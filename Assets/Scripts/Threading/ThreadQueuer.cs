@@ -6,14 +6,22 @@ using System;
 
 public class ThreadQueuer : MonoBehaviour
 {
-    List<Action> functionsToRunInMainThread = new List<Action>();
+    public static ThreadQueuer queuer;
+
+    List<Action> functionsToRunInMainThread;
 
     private void Start()
     {
-        Debug.Log("Started");
+        
         functionsToRunInMainThread = new List<Action>();
-        StartThreadedFunction( () => { SlowFunctionThatDoesAUnityThing(Vector3.up); } );
-        Debug.Log("Done");
+        //StartThreadedFunction( () => { SlowFunctionThatDoesAUnityThing(Vector3.up); } );        
+        if (queuer == null) {
+            queuer = this;
+        } else
+        {
+            Destroy(queuer);
+            queuer = this;
+        }
     }
 
     private void Update() 

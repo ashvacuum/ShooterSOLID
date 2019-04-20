@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7350922219947396635}
   - component: {fileID: 2196462173801235158}
   - component: {fileID: 5422142470105662451}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tile 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.58, y: 3.56}
+    oldSize: {x: 1.0228572, y: 1.0171429}
     newSize: {x: 4.66, y: 4.56}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
