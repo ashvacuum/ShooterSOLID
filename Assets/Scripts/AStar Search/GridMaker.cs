@@ -6,7 +6,9 @@ using UnityEngine;
 
 public class GridMaker : MonoBehaviour
 {
-    public bool onlyDisplayPathGizmos;
+    public GameObject enemies;
+
+    public bool displayGridGizmos;
     public LayerMask unwalkable;
     public Vector2 gridWorldSize;
     public float nodeRadius;
@@ -40,8 +42,25 @@ public class GridMaker : MonoBehaviour
         gridCreated = true;
         yield return new WaitForSeconds(0.5f);
         CreateGrid();
-
+        yield return new WaitForSeconds(0.5f);
+        SpawnEnemies(5);
     }
+
+    void SpawnEnemies(int numberOfEnemies)
+    {
+        float actualWorldSizeX = gridWorldSize.x / 2;
+        float actualWorldSizeY = gridWorldSize.y / 2;
+        ;
+        for (int i = 0; i < numberOfEnemies; i++)
+        {
+            Instantiate(
+                enemies, 
+                    new Vector2(UnityEngine.Random.Range(-actualWorldSizeX, actualWorldSizeX), 
+                    UnityEngine.Random.Range(-actualWorldSizeY, actualWorldSizeY)), 
+                Quaternion.identity);
+        }
+    }
+
 
     public List<Node> GetNeighbors(Node node)
     {
@@ -107,24 +126,18 @@ public class GridMaker : MonoBehaviour
 
         return grid[x, y];
     }
-
-    public List<Node> path;
+    
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireCube(transform.position, gridWorldSize);
 
-        if (grid != null && gridCreated)
+        if (grid != null && gridCreated && displayGridGizmos)
         {
             foreach (Node n in grid)
             {
                 if (n != null)
                 {
-                    Gizmos.color = (n.walkable) ? Color.white : Color.red;
-                    if (path != null)
-                    {
-                        if (path.Contains(n))
-                            Gizmos.color = Color.black;
-                    }
+                    Gizmos.color = (n.walkable) ? Color.white : Color.red;                    
                     Gizmos.DrawCube(n.worldPosition, Vector2.one * (nodeDiameter * 0.9f));
                 }
             }
