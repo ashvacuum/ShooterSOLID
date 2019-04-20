@@ -134,7 +134,7 @@ public class LevelGeneration : MonoBehaviour
 
     void RoomRandomize(int start, int end)
     {
-        int rand = Random.Range(0, rooms.Length);
+        int rand = Random.Range(start, end);
         Instantiate(rooms[rand], transform.position, Quaternion.identity);
     }
 
