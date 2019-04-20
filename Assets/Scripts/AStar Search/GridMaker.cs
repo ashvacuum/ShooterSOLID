@@ -12,7 +12,9 @@ public class GridMaker : MonoBehaviour
     public LayerMask unwalkable;
     public Vector2 gridWorldSize;
     public float nodeRadius;
+    public TerrainType[] walkableRegions;
     Node[,] grid;
+    LayerMask walkableMask;
 
     [SerializeField]private LevelGeneration levelGen;
 
@@ -27,6 +29,11 @@ public class GridMaker : MonoBehaviour
         nodeDiameter = nodeRadius * 2;
         gridSizeX = Mathf.RoundToInt(gridWorldSize.x / nodeDiameter);
         gridSizeY = Mathf.RoundToInt(gridWorldSize.y / nodeDiameter);        
+        foreach(TerrainType region in walkableRegions)
+        {
+            walkableMask.value |= region.terrainMask.value
+        }
+
     }
 
     private void Update()
@@ -105,8 +112,17 @@ public class GridMaker : MonoBehaviour
             for (int j = 0; j < gridSizeY; j++)
             {
                 Vector2 worldPoint = worldBottomLeft + Vector2.right * (i * nodeDiameter + nodeRadius) + Vector2.up * (j * nodeDiameter + nodeRadius);          
-                bool walkable = (Physics2D.OverlapCircle(worldPoint, nodeRadius, unwalkable) == null);                
-                grid[i, j] = new Node(walkable, worldPoint, i, j);                    
+                bool walkable = (Physics2D.OverlapCircle(worldPoint, nodeRadius, unwalkable) == null);
+
+                int movementPenalty = 0;
+
+                //raycast
+                if (walkable)
+                {
+                    //Ray2D ray = new Ray2D
+                }
+
+                grid[i, j] = new Node(walkable, worldPoint, i, j, movementPenalty);                    
             }
         }
         gridCreated = true;        
@@ -142,5 +158,12 @@ public class GridMaker : MonoBehaviour
                 }
             }
         }        
+    }
+
+    [System.Serializable]
+    public class TerrainType
+    {
+        public LayerMask terrainMask;
+        public int terrainPenalty;
     }
 }
