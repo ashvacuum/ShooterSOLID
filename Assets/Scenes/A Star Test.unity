@@ -1302,6 +1302,15 @@ MonoBehaviour:
     m_Bits: 256
   gridWorldSize: {x: 36, y: 36}
   nodeRadius: 0.45
+  walkableRegions:
+  - terrainMask:
+      serializedVersion: 2
+      m_Bits: 256
+    terrainPenalty: 5
+  - terrainMask:
+      serializedVersion: 2
+      m_Bits: 1
+    terrainPenalty: 0
   levelGen: {fileID: 21687673}
 --- !u!4 &1776989949
 Transform:
@@ -1353,11 +1362,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Marine
-      objectReference: {fileID: 0}
-    - target: {fileID: 771775252544034756, guid: 4c1e743dade7ea34a9254123590fd85a,
-        type: 3}
-      propertyPath: m_TagString
-      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 771775252544034761, guid: 4c1e743dade7ea34a9254123590fd85a,
         type: 3}
@@ -1413,16 +1417,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 771775252544034764, guid: 4c1e743dade7ea34a9254123590fd85a,
-        type: 3}
-      propertyPath: maxHealth
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 6102219773323702245, guid: 4c1e743dade7ea34a9254123590fd85a,
-        type: 3}
-      propertyPath: rotationSpeed
-      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c1e743dade7ea34a9254123590fd85a, type: 3}

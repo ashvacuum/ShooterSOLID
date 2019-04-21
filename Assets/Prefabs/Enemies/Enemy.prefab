@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 1939946823510409686}
   - component: {fileID: 1939946823510409675}
   - component: {fileID: 1939946823510409687}
-  - component: {fileID: 8085181999090789602}
+  - component: {fileID: 2998023612468389775}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -157,7 +157,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 5
---- !u!114 &8085181999090789602
+  range: 5
+--- !u!114 &2998023612468389775
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

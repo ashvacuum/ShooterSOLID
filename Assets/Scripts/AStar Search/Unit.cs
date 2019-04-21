@@ -13,13 +13,19 @@ public class Unit : MonoBehaviour
     private void Start()
     {
         target = GameObject.FindGameObjectWithTag("Player").transform;
-        PathRequestManager.RequestPath(transform.position, target.position, OnPathFound);
+        StartPathing(target.position);
     }
 
     private void Update()
     {
         
     }
+
+    public void StartPathing(Vector3 target)
+    {
+        PathRequestManager.RequestPath(transform.position, target, OnPathFound);
+    }
+
 
     public void OnPathFound(Vector2[] newPath, bool pathSuccessful)
     {
@@ -42,6 +48,7 @@ public class Unit : MonoBehaviour
                 targetIndex++;
                 if(targetIndex >= path.Length)
                 {
+                    StartPathing(target.position);
                     yield break;
                 }
                 currentWaypoint = path[targetIndex];
