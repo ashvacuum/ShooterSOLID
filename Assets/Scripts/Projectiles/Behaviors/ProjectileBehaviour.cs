@@ -7,21 +7,39 @@ public class ProjectileBehaviour : MonoBehaviour
     [SerializeField] protected int damage;
     
     [SerializeField] protected GameObject deathParticle;
+
+    [SerializeField] private float projectileDeathTime;
         
 
     private void Start()
     {
-
+        StartCoroutine(DeathTimer());
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    IEnumerator DeathTimer()
     {
-        if(collision.gameObject.GetComponent<IDamage>() != null)
+        yield return new WaitForSeconds(projectileDeathTime);
+        Destroy(gameObject);
+    }   
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.GetComponent<IDamage>() != null)
         {
             collision.gameObject.GetComponent<IDamage>().ModifyHealth(-damage);
+            
         }
-        GameObject g = Instantiate(deathParticle, transform.position, transform.rotation);
-        Destroy(g, 1f);
-        Destroy(gameObject);
+        if (deathParticle != null)
+        {
+            GameObject g = Instantiate(deathParticle, transform.position, transform.rotation);
+            Destroy(g, 1f);
+        }
+        if (!collision.gameObject.GetComponent<ProjectileBehaviour>())
+        {
+            Destroy(gameObject);
+        }
+        
     }
+
+
 }

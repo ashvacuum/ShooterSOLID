@@ -13,7 +13,7 @@ public struct Line
 
     float gradientPerpendicular;
 
-    bool apprachSide;
+    bool approachSide;
 
     public Line(Vector2 pointOnLine, Vector2 pointPerpendicularToLine)
     {
@@ -40,8 +40,8 @@ public struct Line
         pointOnLine_1 = pointOnLine;
         pointOnLine_2 = pointOnLine + new Vector2(1, gradient);
 
-        apprachSide = false;
-        apprachSide = GetSide(pointPerpendicularToLine);
+        approachSide = false;
+        approachSide = GetSide(pointPerpendicularToLine);
        
     }
 
@@ -53,7 +53,7 @@ public struct Line
 
     public bool HasCrossedLine(Vector2 p)
     {
-        return GetSide(p) != apprachSide;
+        return GetSide(p) != approachSide;
     }
 
     public float DistanceFromPoint(Vector2 p)

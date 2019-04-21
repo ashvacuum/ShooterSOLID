@@ -70,7 +70,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300074, guid: 47045c91b5137c6478b130e8f0239233, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -113,7 +113,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.0031117797, y: -0.078644514}
@@ -131,8 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 556ceabab03095a4dba0edb2cf62211d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectileSpeed: 250
   damage: 20
-  startParticle: {fileID: 0}
-  deathParticle: {fileID: 0}
-  deathTime: 5
+  deathParticle: {fileID: 8353978439705487603, guid: 9f380e3069057754c92bb46cbffd2a9b,
+    type: 3}
+  projectileDeathTime: 3

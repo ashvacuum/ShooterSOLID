@@ -951,12 +951,12 @@ TextureImporter:
       name: Effects_v05_Publish_40
       rect:
         serializedVersion: 2
-        x: 1198
-        y: 1575
-        width: 337
-        height: 133
+        x: 1204
+        y: 1539
+        width: 349
+        height: 191
       alignment: 9
-      pivot: {x: 0.52887523, y: 0.43496314}
+      pivot: {x: 0.52605367, y: 0.5135907}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
