@@ -7,3 +7,4 @@ Using Procedurally Generated Levels.
 
 Featuring 2D AI PAthFinding via A* Algorithm.
 
+Character Art Taken from https://opengameart.org/content/top-down-sci-fi-shooter-pack
