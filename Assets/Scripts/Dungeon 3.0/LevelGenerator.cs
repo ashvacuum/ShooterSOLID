@@ -6,7 +6,9 @@ public class LevelGenerator : MonoBehaviour {
 	enum gridSpace {empty, floor, wall};
 	gridSpace[,] grid;
 
-    
+    public List<Vector2> availableLocationsToSpawnEnemies = new List<Vector2>();
+
+   
 
 
 	int roomHeight, roomWidth;    
@@ -232,7 +234,11 @@ public class LevelGenerator : MonoBehaviour {
 		//find the position to spawn
 		Vector2 offset = roomSizeWorldUnits / 2.0f;
 		Vector2 spawnPos = new Vector2(x,y) * worldUnitsInOneGridCell - offset;
-		//spawn object
+        //spawn object
+        if (grid[(int)x, (int)y] == gridSpace.floor)
+        {
+            availableLocationsToSpawnEnemies.Add(spawnPos);
+        }
 		GameObject g = Instantiate(toSpawn, spawnPos, Quaternion.identity);
         g.transform.parent = this.transform;
 	}

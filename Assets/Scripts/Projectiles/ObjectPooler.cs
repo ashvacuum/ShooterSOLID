@@ -67,19 +67,27 @@ public class ObjectPooler : MonoBehaviour
 
     public void ActivateDeathTimer(GameObject objectToDeactive, float deathTime)
     {
+        StopCoroutine(DeathTimer(objectToDeactive, deathTime));
         StartCoroutine(DeathTimer(objectToDeactive, deathTime));
     }
 
     public void ActivateDeathTimer(GameObject objectToDeactive)
     {
+        StopCoroutine(DeathTimer(objectToDeactive));
         StartCoroutine(DeathTimer(objectToDeactive));
     }
 
 
     IEnumerator DeathTimer(GameObject objectToDeactive, float deathTime)
     {
-        yield return new WaitForSeconds(deathTime);
-        objectToDeactive.SetActive(false);
+        if (objectToDeactive.activeInHierarchy)
+        {
+            yield return new WaitForSeconds(deathTime);
+            objectToDeactive.SetActive(false);
+        } else
+        {
+            yield break;
+        }        
     }
 
     IEnumerator DeathTimer(GameObject objectToDeactive)

@@ -24,11 +24,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1939946823300440914}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1.67, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1939946823510409684}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1939946823510409680
 GameObject:
@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 1939946823510409675}
   - component: {fileID: 1939946823510409687}
   - component: {fileID: 2998023612468389775}
+  - component: {fileID: 4958760843683669974}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -62,7 +63,6 @@ Transform:
   m_LocalPosition: {x: -5.61, y: -1.23, z: 0.095102206}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1939946824360771136}
   - {fileID: 1939946823300440913}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 5
-  range: 8
+  range: 20
 --- !u!114 &2998023612468389775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,36 +171,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  speed: 2
+  speed: 0.5
   turnSpeed: 3
   turnDst: 5
---- !u!1 &1939946824360771137
-GameObject:
+--- !u!114 &4958760843683669974
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1939946824360771136}
-  m_Layer: 0
-  m_Name: FireOrigin
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1939946824360771136
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1939946824360771137}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1939946823510409684}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_GameObject: {fileID: 1939946823510409680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b23c4df10aedf74485af495b5d69429, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effectiveRange: 4
+  attackDirection: {fileID: 1939946823300440913}
+  attackRate: 3
+  damage: 10

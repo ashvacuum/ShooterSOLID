@@ -174,7 +174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94b0131c19a91f94392f6049dfadc626, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 6
+  rotationSpeed: 5
 --- !u!1 &771775252646178428
 GameObject:
   m_ObjectHideFlags: 0
@@ -219,9 +219,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileTag: Fireball
-  projectileSpeed: 250
+  projectileSpeed: 900
   direction: {fileID: 771775252674237620}
-  FireRate: 0.75
+  FireRate: 1.1
 --- !u!1 &771775252674237623
 GameObject:
   m_ObjectHideFlags: 0

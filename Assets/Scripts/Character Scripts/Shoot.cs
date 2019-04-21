@@ -28,7 +28,6 @@ public class Shoot : MonoBehaviour
                 bullet.transform.rotation = transform.rotation;
                 bullet.gameObject.SetActive(true);
             }
-
             bullet.AddForce(face * projectileSpeed);
             lastFireRate = Time.time;
         }

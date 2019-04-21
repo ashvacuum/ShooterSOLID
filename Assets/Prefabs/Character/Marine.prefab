@@ -221,7 +221,7 @@ MonoBehaviour:
   projectileTag: Projectile
   projectileSpeed: 600
   direction: {fileID: 771775252674237620}
-  FireRate: 0.35
+  FireRate: 0.1
 --- !u!1 &771775252674237623
 GameObject:
   m_ObjectHideFlags: 0

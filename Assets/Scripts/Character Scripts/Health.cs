@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Health : MonoBehaviour, IDamage
 {
@@ -8,11 +9,21 @@ public class Health : MonoBehaviour, IDamage
 
     private int currentHealth;
 
+    public float GetHealthPercentage
+    {
+        get
+        {
+            float current = currentHealth;
+            float max = maxHealth;
+            return current/max;
+        }
+    }
     
 
     private void Start()
     {
         currentHealth = maxHealth;
+
     }
 
     /// <summary>
@@ -21,13 +32,10 @@ public class Health : MonoBehaviour, IDamage
     /// <param name="amount">if negative will deal damage, if positive will heal</param>
     public void ModifyHealth(int amount)
     {
-        if (currentHealth > 0)
+        currentHealth += amount;
+        if (currentHealth <= 0)
         {
-            currentHealth += amount;
-        }
-        else
-        {
-            //death script
+            Destroy(this.gameObject);
         }    
     }
 }
