@@ -6,22 +6,16 @@ using System;
 
 public class PathFinding : MonoBehaviour
 {
-    PathRequestManager requestManager;
+    
 
     GridMaker grid;
 
     private void Awake()
     {
-        grid = GetComponent<GridMaker>();
-        requestManager = GetComponent<PathRequestManager>();
-    }
+        grid = GetComponent<GridMaker>();    
+    }    
 
-    public void StartFindPath(Vector2 startPos, Vector2 targetPos)
-    {
-        StartCoroutine(FindPath(startPos, targetPos));
-    }
-
-    IEnumerator FindPath(Vector2 startPos, Vector2 targetPos)
+    public void FindPath(PathRequest request, Action<PathResult> callback)
     {
         Stopwatch sw = new Stopwatch();
         sw.Start();
@@ -29,8 +23,8 @@ public class PathFinding : MonoBehaviour
         Vector2[] wayPoints = new Vector2[0];
         bool pathSuccess = false;
 
-        Node startNode = grid.NodeFromWorldPoint(startPos);
-        Node targetNode = grid.NodeFromWorldPoint(targetPos);
+        Node startNode = grid.NodeFromWorldPoint(request.pathStart);
+        Node targetNode = grid.NodeFromWorldPoint(request.pathEnd);
 
         if (startNode.walkable && targetNode.walkable)
         {
@@ -77,13 +71,13 @@ public class PathFinding : MonoBehaviour
                 }
 
             }
-        }
-        yield return null;
+        }        
         if (pathSuccess)
         {
             wayPoints = RetracePath(startNode, targetNode);
+            pathSuccess = wayPoints.Length > 0;
         }
-        requestManager.FinishedProcessingPath(wayPoints, pathSuccess);
+        callback(new PathResult(wayPoints, pathSuccess, request.callback));
     }
 
     Vector2[] RetracePath(Node startNode, Node endNode)

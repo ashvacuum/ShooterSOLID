@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using System.Threading;
 
 public class PathRequestManager : MonoBehaviour
 {
-    
+    Queue<PathResult> results = new Queue<PathResult>();
 
     PathRequest currentPathRequest;
     PathFinding pathfinding;
@@ -20,20 +21,59 @@ public class PathRequestManager : MonoBehaviour
         pathfinding = GetComponent<PathFinding>();
     }
 
+    private void Update()
+    {
+        if(results.Count > 0)
+        {
+            int itemsInQueue = results.Count;
+            lock (results)
+            {
+                for(int i= 0; i < itemsInQueue; i++)
+                {
+                    PathResult result = results.Dequeue();
+                    result.callback(result.path, result.success);
+                }
+            }
+        }
+    }
+
     public static void RequestPath(PathRequest request)
     {
-
+        ThreadStart threadStart = delegate
+        {
+            instance.pathfinding.FindPath(request, instance.FinishedProcessingPath);
+        };
+        threadStart.Invoke();
     }    
 
-    public void FinishedProcessingPath(Vector2[] path, bool success)
-    {
-     
+    public void FinishedProcessingPath(PathResult result)
+    {        
+        lock (results)
+        {
+            results.Enqueue(result);
+        }
     }
+
+    
 
     
 }
 
-struct PathRequest
+public struct PathResult
+{
+    public Vector2[] path;
+    public bool success;
+    public Action<Vector2[], bool> callback;
+
+    public PathResult(Vector2[] path, bool success, Action<Vector2[], bool> callback)
+    {
+        this.path = path;
+        this.success = success;
+        this.callback = callback;
+    }
+}
+
+public struct PathRequest
 {
     public Vector2 pathStart;
     public Vector2 pathEnd;
