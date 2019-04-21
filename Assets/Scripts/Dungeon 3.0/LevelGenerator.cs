@@ -5,9 +5,12 @@ using UnityEngine;
 public class LevelGenerator : MonoBehaviour {
 	enum gridSpace {empty, floor, wall};
 	gridSpace[,] grid;
-	int roomHeight, roomWidth;
-    public GameObject[] heroes;
-    public int heroToSpawn;
+
+    
+
+
+	int roomHeight, roomWidth;    
+    
 	[SerializeField] Vector2 roomSizeWorldUnits = new Vector2(30,30);
 	float worldUnitsInOneGridCell = 1;
 	struct walker{
@@ -19,16 +22,22 @@ public class LevelGenerator : MonoBehaviour {
 	float chanceWalkerDestoy = 0.05f;
     [SerializeField] int maxWalkers = 10;
     [SerializeField] float percentToFill = 0.2f; 
-	public GameObject wallObj, floorObj;
+	public GameObject wallObj, floorObj, emptyObj;
 	void Start () {
-		Setup();
-		CreateFloors();
-		CreateWalls();
-		RemoveSingleWalls();
-		SpawnLevel();
-        SpawnHeroes(heroToSpawn);
+		
 	}
-	void Setup(){
+    public void Init()
+    {
+        Setup();
+        CreateFloors();
+        CreateWalls();
+        RemoveSingleWalls();
+        SpawnLevel();
+        //SpawnHeroes(heroToSpawn);
+    }
+
+
+    void Setup(){
 		//find grid size
 		roomHeight = Mathf.RoundToInt(roomSizeWorldUnits.x / worldUnitsInOneGridCell);
 		roomWidth = Mathf.RoundToInt(roomSizeWorldUnits.y / worldUnitsInOneGridCell);
@@ -48,8 +57,10 @@ public class LevelGenerator : MonoBehaviour {
 		walker newWalker = new walker();
 		newWalker.dir = RandomDirection();
 		//find center of grid
-		Vector2 spawnPos = new Vector2(Mathf.RoundToInt(roomWidth/ 2.0f),
-										Mathf.RoundToInt(roomHeight/ 2.0f));
+		Vector2 spawnPos = new Vector2(
+            Mathf.RoundToInt(roomWidth/ 2.0f),
+            Mathf.RoundToInt(roomHeight/ 2.0f));
+
 		newWalker.pos = spawnPos;
 		//add walker to list
 		walkers.Add(newWalker);
@@ -115,8 +126,9 @@ public class LevelGenerator : MonoBehaviour {
 		//loop though every grid space
 		for (int x = 0; x < roomWidth-1; x++){
 			for (int y = 0; y < roomHeight-1; y++){
-				//if theres a floor, check the spaces around it
-				if (grid[x,y] == gridSpace.floor){
+				
+                //if theres a floor, check the spaces around it
+                if (grid[x,y] == gridSpace.floor){
 					//if any surrounding spaces are empty, place a wall
 					if (grid[x,y+1] == gridSpace.empty){
 						grid[x,y+1] = gridSpace.wall;
@@ -131,7 +143,8 @@ public class LevelGenerator : MonoBehaviour {
 						grid[x-1,y] = gridSpace.wall;
 					}
 				}
-			}
+                
+            }
 		}
 	}
 	void RemoveSingleWalls(){
@@ -163,7 +176,14 @@ public class LevelGenerator : MonoBehaviour {
 						grid[x,y] = gridSpace.floor;
 					}
 				}
-			}
+                //turns grid space into a wall if it is the edge
+                if (x == 0 || x == roomWidth - 1
+                    && y == 0 || y == roomHeight - 1
+                    && grid[x, y] != gridSpace.wall)
+                {
+                    grid[x, y] = gridSpace.wall;
+                }
+            }
 		}
 	}
 	void SpawnLevel(){
@@ -171,6 +191,7 @@ public class LevelGenerator : MonoBehaviour {
 			for (int y = 0; y < roomHeight; y++){
 				switch(grid[x,y]){
 					case gridSpace.empty:
+                        Spawn(x, y, emptyObj);
 						break;
 					case gridSpace.floor:
 						Spawn(x,y,floorObj);
@@ -182,14 +203,7 @@ public class LevelGenerator : MonoBehaviour {
 			}
 		}
 	}
-    void SpawnHeroes(int spawnChoice)
-    {
-        if(spawnChoice >= heroes.Length)
-        {
-            spawnChoice = heroes.Length - 1;
-        }
-        Instantiate(heroes[spawnChoice], Vector2.zero, Quaternion.identity);
-    }
+    
 	Vector2 RandomDirection(){
 		//pick random int between 0 and 3
 		int choice = Mathf.FloorToInt(Random.value * 3.99f);

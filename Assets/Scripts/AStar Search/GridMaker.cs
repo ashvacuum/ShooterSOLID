@@ -17,8 +17,7 @@ public class GridMaker : MonoBehaviour
     LayerMask walkableMask;
     public int obstacleProximityPenalty = 10;
     Dictionary<int, int> walkableRegionsDictionary = new Dictionary<int, int>();
-
-    [SerializeField]private LevelGeneration levelGen;
+    
 
     
     bool gridCreated;
@@ -35,16 +34,7 @@ public class GridMaker : MonoBehaviour
         gridSizeX = Mathf.RoundToInt(gridWorldSize.x / nodeDiameter);
         gridSizeY = Mathf.RoundToInt(gridWorldSize.y / nodeDiameter);
         MakeNewTerraintTypeDictionary();
-    }
-
-    private void Update()
-    {
-        if (!gridCreated && !levelGen.CanGenerate)
-        {
-            StartCoroutine(CreateGridWithDelay());
-        }
-      
-    }    
+    }        
 
     void MakeNewTerraintTypeDictionary()
     {
@@ -55,28 +45,12 @@ public class GridMaker : MonoBehaviour
         }
     }
 
-    IEnumerator CreateGridWithDelay()
+    public IEnumerator CreateGridWithDelay()
     {
         gridCreated = true;        
         yield return new WaitForSeconds(0.5f);
-        CreateGrid();
-        yield return new WaitForSeconds(0.5f);
-        SpawnEnemies(5);
-    }
-
-    void SpawnEnemies(int numberOfEnemies)
-    {
-        float actualWorldSizeX = gridWorldSize.x / 2;
-        float actualWorldSizeY = gridWorldSize.y / 2;
-        ;
-        for (int i = 0; i < numberOfEnemies; i++)
-        {
-            Instantiate(
-                enemies, 
-                    new Vector2(UnityEngine.Random.Range(-actualWorldSizeX, actualWorldSizeX), 
-                    UnityEngine.Random.Range(-actualWorldSizeY, actualWorldSizeY)), 
-                Quaternion.identity);
-        }
+        CreateGrid();        
+        yield return new WaitForSeconds(0.5f);        
     }
 
     void BlurPenaltyMap(int blurSize)
@@ -173,7 +147,7 @@ public class GridMaker : MonoBehaviour
         }
     }
 
-    void CreateGrid()
+    public void CreateGrid()
     {
         grid = new Node[gridSizeX, gridSizeY];
         Vector2 worldBottomLeft = Vector2.zero - Vector2.right * gridWorldSize.x / 2 - Vector2.up * gridWorldSize.y / 2;
@@ -204,7 +178,8 @@ public class GridMaker : MonoBehaviour
             }
         }
         BlurPenaltyMap(3);
-        gridCreated = true;        
+        gridCreated = true;
+        Debug.Log("Grid Created");
     }
 
     public Node NodeFromWorldPoint(Vector2 worldPosition)

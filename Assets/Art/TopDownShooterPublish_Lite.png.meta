@@ -13,12 +13,13 @@ TextureImporter:
     21300016: Enforcer
     21300018: medic
     21300020: Buggy
-    21300022: TopDownShooterPublish_Lite_11
+    21300022: Walls
     21300024: TopDownShooterPublish_Lite_12
-    21300026: TopDownShooterPublish_Lite_13
+    21300026: EmptyTerrain
     21300028: TopDownShooterPublish_Lite_14
     21300030: TopDownShooterPublish_Lite_15
     21300032: Marine 3
+    21300034: Floor
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -332,7 +333,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TopDownShooterPublish_Lite_11
+      name: Walls
       rect:
         serializedVersion: 2
         x: 1628
@@ -372,13 +373,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TopDownShooterPublish_Lite_13
+      name: EmptyTerrain
       rect:
         serializedVersion: 2
-        x: 343
-        y: 368
-        width: 838
-        height: 841
+        x: 695
+        y: 696
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -412,26 +413,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TopDownShooterPublish_Lite_15
-      rect:
-        serializedVersion: 2
-        x: 2207
-        y: 368
-        width: 841
-        height: 841
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f14ddf9923edc2d459ba54729d36babf
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Marine 3
       rect:
         serializedVersion: 2
@@ -447,6 +428,26 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: e5eb805625b48dd45b223828e74e221c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor
+      rect:
+        serializedVersion: 2
+        x: 2464
+        y: 727
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6aca8ee4960107489f508209e056751
       vertices: []
       indices: 
       edges: []
