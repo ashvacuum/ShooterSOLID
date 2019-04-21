@@ -1300,8 +1300,8 @@ MonoBehaviour:
   unwalkable:
     serializedVersion: 2
     m_Bits: 256
-  gridWorldSize: {x: 36, y: 36}
-  nodeRadius: 0.45
+  gridWorldSize: {x: 45, y: 45}
+  nodeRadius: 0.3
   walkableRegions:
   - terrainMask:
       serializedVersion: 2
@@ -1311,6 +1311,7 @@ MonoBehaviour:
       serializedVersion: 2
       m_Bits: 1
     terrainPenalty: 0
+  obstacleProximityPenalty: 10
   levelGen: {fileID: 21687673}
 --- !u!4 &1776989949
 Transform:
@@ -1366,12 +1367,12 @@ PrefabInstance:
     - target: {fileID: 771775252544034761, guid: 4c1e743dade7ea34a9254123590fd85a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -14.329691
+      value: -19.68
       objectReference: {fileID: 0}
     - target: {fileID: 771775252544034761, guid: 4c1e743dade7ea34a9254123590fd85a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13.514987
+      value: 19.3
       objectReference: {fileID: 0}
     - target: {fileID: 771775252544034761, guid: 4c1e743dade7ea34a9254123590fd85a,
         type: 3}

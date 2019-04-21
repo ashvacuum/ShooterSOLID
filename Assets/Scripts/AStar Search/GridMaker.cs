@@ -61,7 +61,7 @@ public class GridMaker : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         CreateGrid();
         yield return new WaitForSeconds(0.5f);
-        //SpawnEnemies(5);
+        SpawnEnemies(5);
     }
 
     void SpawnEnemies(int numberOfEnemies)
@@ -125,7 +125,7 @@ public class GridMaker : MonoBehaviour
                 penaltiesVerticalPass[x, y] = penaltiesHorizontalPass[x, y - 1] - penaltiesHorizontalPass[x, removeIndex] + penaltiesHorizontalPass[x, addIndex];
                 blurredPenalty = Mathf.RoundToInt((float)penaltiesVerticalPass[x, y] / (kernelSize * kernelSize));
                 grid[x, y].movementPenalty = blurredPenalty;
-
+                
                 if(blurredPenalty > penaltyMax)
                 {
                     penaltyMax = blurredPenalty;

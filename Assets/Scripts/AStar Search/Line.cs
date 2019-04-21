@@ -50,9 +50,25 @@ public struct Line
         return (p.x - pointOnLine_1.x) * (pointOnLine_2.y - pointOnLine_1.y) > (p.y - pointOnLine_1.y) * (pointOnLine_2.x - pointOnLine_1.x);
     }
 
+
     public bool HasCrossedLine(Vector2 p)
     {
         return GetSide(p) != apprachSide;
     }
 
+    public float DistanceFromPoint(Vector2 p)
+    {
+        float yInterceptPerpendicular = p.y - gradientPerpendicular * p.x;
+        float intersectX = (yInterceptPerpendicular - y_intercept) / (gradient - gradientPerpendicular);
+        float intersectY = gradient * intersectX + y_intercept;
+        return Vector2.Distance(p, new Vector2(intersectX, intersectY));
+    }
+
+    public void DrawWithGizmos(float length)
+    {
+        Vector2 lineDirection = new Vector2(1, gradient).normalized;
+        Vector2 lineCenter = pointOnLine_1;
+
+        Gizmos.DrawLine(lineCenter - lineDirection * length / 2, lineCenter - lineDirection * length / 2);
+    }
 }
