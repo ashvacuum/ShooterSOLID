@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 860773090060490808}
   m_Layer: 0
   m_Name: Firebat
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -218,8 +218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ffe5c446c0440f4290c1c398498c121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 3619480695720684430, guid: cb1765d1826f3164990f0bae7a947832,
-    type: 3}
+  projectileTag: Smoke
   projectileSpeed: 300
   direction: {fileID: 771775252674237620}
   FireRate: 0.05

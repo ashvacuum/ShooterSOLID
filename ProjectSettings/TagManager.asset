@@ -6,6 +6,13 @@ TagManager:
   tags:
   - spawn point
   - Enemy
+  - Projectile
+  - Effect
+  - Fireball
+  - FireballDeath
+  - BulletImpact
+  - SmokeDeath
+  - Smoke
   layers:
   - Default
   - TransparentFX

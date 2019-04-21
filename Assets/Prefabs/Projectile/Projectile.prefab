@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6270168252548076527}
   m_Layer: 0
   m_Name: Projectile
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -116,9 +116,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  deathParticle: {fileID: 8053599563265617366, guid: dbae85b2ef918294fa09793f7d403684,
-    type: 3}
+  deathParticleName: BulletImpact
   projectileDeathTime: 5
+  particleDeathTime: 1
 --- !u!58 &6270168252548076527
 CircleCollider2D:
   m_ObjectHideFlags: 0

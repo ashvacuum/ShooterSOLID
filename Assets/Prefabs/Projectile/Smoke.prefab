@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8530926627445084779}
   m_Layer: 0
   m_Name: Smoke
-  m_TagString: Untagged
+  m_TagString: Smoke
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -116,9 +116,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 2
-  deathParticle: {fileID: 4507222913256258724, guid: a2c31c4050cdad746bfce3cc3cfc1d5e,
-    type: 3}
+  deathParticleName: SmokeDeath
   projectileDeathTime: 0.3
+  particleDeathTime: 1
 --- !u!70 &8530926627445084779
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 5635095078475651472}
   m_Layer: 0
   m_Name: Enforcer
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -218,8 +218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ffe5c446c0440f4290c1c398498c121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 3619480695720684430, guid: a3afd4b180818504eb47c969c27db034,
-    type: 3}
+  projectileTag: Fireball
   projectileSpeed: 250
   direction: {fileID: 771775252674237620}
   FireRate: 0.75

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Shoot : MonoBehaviour
 {
-    [SerializeField] private Rigidbody2D projectile;
+    [SerializeField] private string projectileTag;
     [SerializeField] protected float projectileSpeed;
     [SerializeField] private Transform direction;
     [SerializeField] protected float FireRate;
@@ -20,9 +20,16 @@ public class Shoot : MonoBehaviour
     {
         if (Time.time - lastFireRate > FireRate)
         {
-            Vector2 face = direction.position - transform.position;
-            Rigidbody2D rb = Instantiate(projectile, transform.position, transform.rotation);
-            rb.AddForce(face * projectileSpeed);
+            Vector2 face = direction.position - transform.position;            
+            Rigidbody2D bullet = ObjectPooler.SharedInstance.GetPooledObject(projectileTag).GetComponent<Rigidbody2D>();
+            if (bullet != null)
+            {
+                bullet.transform.position = transform.position;
+                bullet.transform.rotation = transform.rotation;
+                bullet.gameObject.SetActive(true);
+            }
+
+            bullet.AddForce(face * projectileSpeed);
             lastFireRate = Time.time;
         }
     }
