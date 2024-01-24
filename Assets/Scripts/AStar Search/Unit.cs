@@ -72,9 +72,10 @@ public class Unit : MonoBehaviour
         //transform.LookAt(path.lookPoints[0]);
 
         float speedPercent = 1;
-
+        
         while (followingPath)
         {
+            path.turnBoundaries.Length
             while (path.turnBoundaries[pathIndex].HasCrossedLine(transform.position))
             {
                 if(pathIndex == path.finishLineIndex)
